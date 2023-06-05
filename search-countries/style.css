@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=850&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 35%;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 150px;
+  /* min-width: 400px; */
+  background-color: rgba(133, 94, 66, 0.708);
+  border-radius: 20px;
+  /* overflow: hidden; */
+}
+.card-input {
+  text-align: center;
+  margin: 20px 9px 3px 9px;
+}
+.card-input .country-input {
+  min-width: 180px;
+  border: none;
+  outline: none;
+  padding: 0.8em;
+  border-radius: 18px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(189, 96, 29, 0.644);
+  margin-left: 5px;
+}
+.card-input .country-input::placeholder {
+  color: white;
+  text-align: center;
+}
+.card-input .search-btn {
+  border: none;
+  outline: none;
+  padding: 0.8em;
+  border-radius: 18px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(189, 96, 29, 0.644);
+  margin-right: 5px;
+}
+.output {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  color: white;
+}
+.output-div {
+  padding: 10px;
+}
+.output-div p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.title-and-flag {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.flag {
+  height: 150px;
+  width: 200px;
+}
+.main-page {
+  padding-left: 6px;
+}
+.main-page a {
+  text-decoration: none;
+  color: black;
+}
+.main-page button {
+  background-color: rgb(166, 114, 67);
+  padding: 1px 7px;
+  outline: none;
+  border-color: rgb(173, 111, 57);
+  border-radius: 10px;
+}

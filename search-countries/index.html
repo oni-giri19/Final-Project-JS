@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./script.js" defer></script>
+    <title>Country Info</title>
+</head>
+
+<body>
+    <div class="main-page">
+        <p>Weather now! <button><a href="../main.html">Go There</a></button></p>
+    </div>
+    <section>
+        <div class="card">
+            <div class="card-input">
+                <span><input class="country-input" type="text" placeholder="type country name here"></span>
+                <span><button class="search-btn" onclick="handleSearch()"><i class="fa fa-search"></i></button></span>
+            </div>
+            <div style="display: flex;">
+                <strong class="alert"
+                    style="text-align: center;color: rgba(236, 18, 18, 0.87);margin: 1px auto;"></strong>
+            </div>
+            <div class="output"></div>
+        </div>
+    </section>
+    <footer style="text-align: center;font-size: small;font-weight: bolder;">Data provided by <a
+            href="https://restcountries.com/">restcountries.com</a>
+    </footer>
+</body>
+
+</html>

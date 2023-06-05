@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500&family=Poppins&family=Raleway:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <title>Weather Now</title>
+</head>
+
+<body>
+    <div class="second-page">
+        <p>Get your country info <button><a style="color: white;" href="./search-countries/index.html">Here</a></button>
+        </p>
+    </div>
+    <section>
+        <div class="weather-card">
+            <div class="search-bar">
+                <span><input class="city-input" type="text" placeholder="please provide an actual city"></span>
+                <span><button onclick="handleSearch()" class="search-btn"><i class="fa fa-search"></i></button></span>
+            </div>
+            <div style="display: flex;">
+                <strong class="alert" style="text-align: center;color: red;margin: 1px auto;"></strong>
+            </div>
+            <h3 id="city-name">Weather in:</h3>
+            <div class="result-div">
+                <div class="result-left">
+                    <p id="temperature">°C</p>
+                    <p id="main">weather type</p>
+                    <p id="humidity">humidity</p>
+                    <p id="pressure">pressure</p>
+                </div>
+                <div class="result-right">
+                    <p id="wind">wind speed</p>
+                    <p id="wind-direction">wind direction</p>
+                    <p id="clouds">cloud coverage</p>
+                    <p id="country">Country</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="text-align: center;font-size: small;font-weight: bolder;color: white;">Data provided by <a
+            href="https://openweathermap.org/">openweathermap.org</a>
+    </footer>
+</body>
+
+</html>

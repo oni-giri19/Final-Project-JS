@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500&family=Poppins&family=Raleway:ital,wght@1,500&display=swap");
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1583211434551-28809df307dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather-card {
+  background-color: #000000d0;
+  color: white;
+  font-family: "Lexend", sans-serif;
+  padding: 20px;
+  border-radius: 20px;
+  /* width: 100%; */
+  max-width: 550px;
+}
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+.weather-card > h3 {
+  margin: 5px auto;
+}
+#temperature {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.result-div p {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.result-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+input {
+  min-width: 180px;
+  border: none;
+  outline: none;
+  padding: 0.8em;
+  border-radius: 18px;
+  color: white;
+  background-color: #7c7c7c2b;
+}
+
+.search-btn {
+  border: none;
+  outline: none;
+  padding: 0.8em;
+  border-radius: 18px;
+  color: white;
+  background-color: #7c7c7c2b;
+}
+.search-btn:hover {
+  cursor: pointer;
+}
+input::placeholder {
+  text-align: center;
+}
+.result-div {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  margin-top: 5px;
+}
+.second-page {
+  text-align: right;
+  color: white;
+}
+.second-page a {
+  text-decoration: none;
+  color: black;
+}
+.second-page button {
+  background-color: rgb(66, 153, 222);
+  padding: 1px 7px;
+  outline: none;
+  border-color: aqua;
+  border-radius: 10px;
+}
+@media (max-width: 440px) {
+  .result-div {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+@media (max-width: 270px) {
+  .result-div {
+    font-size: smaller;
+  }
+  .alert {
+    font-size: smaller;
+  }
+}
