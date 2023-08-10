@@ -18,7 +18,9 @@
 
 <body>
     <div class="second-page">
-        <p>Get your country info <button><a style="color: white;" href="./search-countries/index.html">Here</a></button>
+        <p><button style="padding: 5px 10px;"><a style="color: white;" href="./search-countries/index.html">Get your
+                    country
+                    info Here</a></button>
         </p>
     </div>
     <section>
@@ -27,22 +29,26 @@
                 <span><input class="city-input" type="text" placeholder="please provide an actual city"></span>
                 <span><button onclick="handleSearch()" class="search-btn"><i class="fa fa-search"></i></button></span>
             </div>
+            <!-- loading-spinner here -->
+            <div class="loading-spinner" style="display: none;">
+                <div class="spinner"></div>
+            </div>
             <div style="display: flex;">
                 <strong class="alert" style="text-align: center;color: red;margin: 1px auto;"></strong>
             </div>
-            <h3 id="city-name">Weather in:</h3>
+            <h3 id="city-name"></h3>
             <div class="result-div">
                 <div class="result-left">
-                    <p id="temperature">°C</p>
-                    <p id="main">weather type</p>
-                    <p id="humidity">humidity</p>
-                    <p id="pressure">pressure</p>
+                    <p id="temperature"></p>
+                    <p id="main"> </p>
+                    <p id="humidity"></p>
+                    <p id="pressure"></p>
                 </div>
                 <div class="result-right">
-                    <p id="wind">wind speed</p>
-                    <p id="wind-direction">wind direction</p>
-                    <p id="clouds">cloud coverage</p>
-                    <p id="country">Country</p>
+                    <p id="wind"> </p>
+                    <p id="wind-direction"> </p>
+                    <p id="clouds"> </p>
+                    <p id="country"></p>
                 </div>
             </div>
         </div>

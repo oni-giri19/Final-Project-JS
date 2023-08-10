@@ -14,13 +14,17 @@
 
 <body>
     <div class="main-page">
-        <p>Weather now! <button><a href="../index.html">Go There</a></button></p>
+        <p><button style="padding: 5px 20px;"><a href="../index.html">Weather now! Go There</a></button></p>
     </div>
     <section>
         <div class="card">
             <div class="card-input">
                 <span><input class="country-input" type="text" placeholder="type country name here"></span>
                 <span><button class="search-btn" onclick="handleSearch()"><i class="fa fa-search"></i></button></span>
+            </div>
+            <!-- loading spinner here -->
+            <div class="loading-spinner" style="display: none;">
+                <div class="spinner"></div>
             </div>
             <div style="display: flex;">
                 <strong class="alert"
@@ -32,6 +36,7 @@
     <footer style="text-align: center;font-size: small;font-weight: bolder;">Data provided by <a
             href="https://restcountries.com/">restcountries.com</a>
     </footer>
+
 </body>
 
 </html>

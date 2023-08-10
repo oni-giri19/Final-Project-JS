@@ -40,6 +40,9 @@ async function handleSearch() {
   const citySearch = cityInput.value;
 
   if (citySearch) {
+    const loadingSpinner = document.querySelector(".loading-spinner");
+    loadingSpinner.style.display = "block"; // Show the loading spinner
+
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${citySearch}&units=metric&appid=${weather.apiKey}`
     );
@@ -54,6 +57,8 @@ async function handleSearch() {
     windDirectionOutput.innerHTML = `direction: ${data.wind.deg}°`;
     cloudsOutput.innerHTML = `clouds: ${data.clouds.all} %`;
     countryOutput.innerHTML = `country: ${data.sys.country}`;
+
+    loadingSpinner.style.display = "none"; // Hide the loading spinner
   } else {
     const alert = document.querySelector(".alert");
     alert.innerHTML = "Please enter a city name above";
