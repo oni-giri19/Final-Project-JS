@@ -14,6 +14,9 @@ async function handleSearch() {
   const countrySearch = countryInput.value;
 
   if (countrySearch) {
+    const loadingSpinner = document.querySelector(".loading-spinner");
+    loadingSpinner.style.display = "block"; // Show the loading spinner
+
     searchResults.forEach((entry) => entry.remove());
 
     const response = await fetch(
@@ -48,6 +51,8 @@ async function handleSearch() {
   `;
     output.appendChild(div);
     searchResults.push(div);
+
+    loadingSpinner.style.display = "none"; // Hide the loading spinner
   } else {
     const alert = document.querySelector(".alert");
     alert.innerHTML = "Please provide a valid country";
